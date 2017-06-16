@@ -1,0 +1,1 @@
+# Giving the path ro search my resource 
