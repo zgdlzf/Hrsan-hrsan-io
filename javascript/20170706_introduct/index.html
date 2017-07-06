@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p>下面是js的案例</p>
+  <script>
+    document.write("<h1>html写入输入出流</h1>");
+    document.write("<p>write success</p>")
+  </script>
+  <input type="button" onclick="alert('hello js')" value="对事件作出反应">
+  <p id="change">待改变内容</p>
+  <script>
+    function myChange(){
+      x=document.getElementById("change");
+      x.innerHTML="hello javascript";
+    }
+  </script>
+  <input type="button" onclick="myChange()" value="改变内容">
+  <script>
+    function changePicture(){
+      element=document.getElementById("picture");
+      if(element.src.match("dl1")){
+        element.src="./images/dl2.jpg";
+      }
+      else{
+        element.src="./images/dl1.jpg";
+      }
+    }
+  </script>
+  <img  id="picture" src="./images/dl1.jpg" alt="迪丽热巴" onclick="changePicture()">
+  <p id="demo">改变样式</p>
+  <script>
+    function changeStyle(){
+      y=document.getElementById("demo");
+      y.style.color="#a35";
+    }
+  </script>
+  <input type="button" onclick="changeStyle()" value="改变样式">
+</body>
+</html>
