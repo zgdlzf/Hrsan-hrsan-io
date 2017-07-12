@@ -1,0 +1,27 @@
+
+li{
+  width:50px;
+  height:50px;
+  background-color: #3ff;
+  position:relative;
+}
+.father{
+  width:100px;
+  height:100px;
+  background-color: #ff3;
+  position:relative;
+  z-index:2;
+}
+.son{
+  width:400px;
+  height:400px;
+  background-color: #000;
+  left:0;
+  top:50px;
+  z-index:1;
+
+}
+li:hover+.son{
+  z-index:100;
+  background-color: #f00;
+}

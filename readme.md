@@ -1,1 +1,1 @@
-# Giving the path ro search my resource 
+ving the path ro search my resource # Gi
